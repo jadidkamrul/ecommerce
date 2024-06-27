@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [AppController::class, 'index'])->name('app.index');
+Route::get('/shop', 'App\Http\Controllers\ShopController@index')->name('shop.index');
 
 Auth::routes();
 
