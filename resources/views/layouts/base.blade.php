@@ -115,7 +115,7 @@
                         <div class="main-menu">
                             <div class="menu-left">
                                 <div class="brand-logo">
-                                    <a href="index.htm">
+                                    <a href="{{ route('app.index')}}">
                                         <img src="assets/images/logo.png" class="h-logo img-fluid blur-up lazyload"
                                             alt="logo">
                                     </a>
@@ -208,7 +208,7 @@
                                                             <li>
                                                                 <a href="{{ route('register') }}" class="d-block">Register</a>
                                                             </li>
-                                                    @endauth 
+                                                    @endauth
                                                 @endif
                                             </ul>
                                         </div>
@@ -269,8 +269,8 @@
                 </a>
             </li>
         </ul>
-    </div> 
-    
+    </div>
+
     @yield('content')
 
     <div id="qvmodal"></div>
